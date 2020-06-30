@@ -70,24 +70,25 @@ class ProductProvider extends Component{
     }
    
    increment = (id) =>{
-
+          console.log("increment the value of cart");
    }
 
    decrement = (id) =>{
-
+         console.log("decrement the item of cart");
    }
 
    removeItem = (id)=>{
-
+         console.log("remove item from cart");
    }
 
    clearCart = ()=>{
-
+        console.log("clear item from cart");
    }
 
    addTotals = ()=>{
        let subTotal =0;
        this.state.cart.map(item=>{subTotal +=item.total});
+       console.log("add total price");
 
    }
 
